@@ -1,84 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Lecture 7 Attendance</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Adventure Website</title>
+
+    <!-- External CSS used by all pages -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS just for the home page -->
+    <style>
+        body {
+            background-color: #b8e0d2;
+            background-image: url("background.jpg");
+            background-repeat: repeat;
+            background-size: 200px;
+        }
+
+        .home-title {
+            text-align: center;
+            font-family: Georgia, "Times New Roman", serif;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 20px;
+        }
+
+        .home-title::first-letter {
+            font-size: 60px;
+        }
+
+        .intro-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 5px solid #1e3a5f;
+            border-radius: 20px;
+            padding: 25px;
+            margin: 50px auto;
+            width: 70%;
+            color: #111827;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <p class="test_class">
-        <span style="color: red;">Lorem ipsum dolor sit amet consectetur adipiscing elit.</span>
-        Quisque faucibus ex sapien vitae pellentesque sem placerat.
-        In id cursus mi pretium tellus duis convallis.
-        Tempus leo eu aenean sed diam urna tempor.
-        Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-        Iaculis massa nisl malesuada lacinia integer nunc posuere.
-        Ut hendrerit semper vel class aptent taciti sociosqu.
-        Ad litora torquent per conubia nostra inceptos himenaeos.
-    </p>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="images.html">Images</a>
+        <a href="hidden.html">Hidden Text</a>
+    </nav>
 
-    <p>
-        Suspendisse potenti.
-        Nullam hendrerit iaculis neque nec laoreet.
-        Maecenas sed diam dui.
-        Maecenas dapibus tempus ligula, at accumsan odio vehicula auctor.
-        Praesent lobortis gravida lorem, sed dictum arcu vestibulum vitae.
-        Cras sed urna aliquam, dictum dui at, rhoncus sem.
-        Nullam id eleifend metus.
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-        per inceptos himenaeos.
-    </p>
+    <main class="content">
 
-    <img src="flower.jpg" alt="No image">
+        <h1 class="home-title">My Adventure Website</h1>
 
-    <div class="test_class">
-
-        <p>
-            Phasellus vitae elementum elit.
-            Vivamus aliquet non mauris non placerat.
-            Phasellus ultrices eleifend ipsum sit amet dictum.
-            Quisque in vehicula nibh.
-            In iaculis egestas erat, ac gravida ipsum luctus quis.
-            Mauris iaculis lorem quis lacus eleifend, in dictum elit tempus.
-            Etiam varius risus in erat porta rhoncus.
-            Duis non tristique leo.
-            Pellentesque id risus enim.
-        </p>
-
-        <div id="test_id">
-
+        <div class="intro-box">
             <p>
-                Nullam interdum sed dolor in bibendum.
-                Etiam porttitor massa sit amet libero maximus rhoncus.
-                Cras suscipit turpis non maximus consectetur.
-                Vivamus efficitur in felis id auctor.
-                Nulla facilisi.
-                Aenean sit amet est urna.
-                Vivamus finibus dictum sodales.
-                Phasellus tempus mauris ut pharetra tempor.
-                Donec cursus aliquam porta.
+                Welcome to my website! This site shows some of my favorite
+                places, pictures, and activities. Use the navigation bar above
+                to explore the different pages.
             </p>
-
-            <p>
-                Nunc lobortis leo et quam imperdiet, vel suscipit augue sagittis.
-                Donec id eros in magna egestas euismod.
-                Vivamus faucibus sit amet erat vitae rhoncus.
-                Sed eu libero lectus.
-                Integer porttitor sodales pretium.
-                Cras at dolor quis massa lacinia ullamcorper vel ac nulla.
-                Etiam sit amet ligula ac odio faucibus accumsan vitae eget ligula.
-                Donec quis suscipit odio, nec fringilla nibh.
-                Sed consectetur tempor volutpat.
-                Sed porttitor ante lectus, in ultricies sem pretium eu.
-                Integer laoreet luctus nisi.
-                Etiam dignissim aliquet nisl, nec fermentum risus consectetur vitae.
-                Donec congue sapien vel ornare rutrum.
-            </p>
-
         </div>
-    </div>
+
+    </main>
 
 </body>
+
 </html>
