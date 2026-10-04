@@ -1,3 +1,58 @@
-p {
-    font-size: 24px;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 90px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #dbeafe;
+}
+
+/* Fixed top navigation bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e3a5f;
+    border-bottom: 4px solid #0f172a;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* General styling for all navigation links */
+.navbar a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+/* Unvisited links */
+.navbar a:link {
+    color: white;
+    background-color: #2563eb;
+}
+
+/* Visited links */
+.navbar a:visited {
+    color: #fef08a;
+    background-color: #4c1d95;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    color: black;
+    background-color: #38bdf8;
+}
+
+/* Main content area */
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
 }
