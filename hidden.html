@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hidden Text</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: #fef3c7;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .story {
+            background-color: white;
+            border: 3px solid #92400e;
+            padding: 30px;
+            border-radius: 15px;
+            line-height: 1.8;
+        }
+
+        .story p::first-line {
+            text-transform: uppercase;
+        }
+
+        .secret {
+            color: transparent;
+            user-select: none;
+            cursor: pointer;
+            border-bottom: 2px dotted #92400e;
+        }
+
+        .secret:focus {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="images.html">Images</a>
+        <a href="hidden.html">Hidden Text</a>
+    </nav>
+
+    <main class="content">
+
+        <h1>Find the Hidden Words</h1>
+
+        <div class="story">
+
+            <p>
+                One morning I decided to explore the
+                <span class="secret" tabindex="0">mountains</span>
+                near my home. The weather was beautiful and the sky was clear.
+            </p>
+
+            <p>
+                As I continued walking, I noticed a small
+                <span class="secret" tabindex="0">river</span>
+                running beside the trail.
+            </p>
+
+            <p>
+                A little farther ahead, I discovered an enormous
+                <span class="secret" tabindex="0">tree</span>
+                beside the trail.
+            </p>
+
+            <p>
+                Eventually I reached the highest part of the trail
+                and saw a beautiful
+                <span class="secret" tabindex="0">sunset</span>
+                over the mountains.
+            </p>
+
+            <p>
+                Before heading home, I took one last
+                <span class="secret" tabindex="0">picture</span>
+                so I could remember the adventure.
+            </p>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
